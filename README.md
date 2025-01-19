@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Challenge 01 - Practicing ReactJS Concepts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+This repository contains the solution for Challenge 01 of the Rocketseat ReactJS course. The goal of this challenge is to reinforce the most important concepts of ReactJS and learn new concepts that will be used in future applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About the Challenge
 
-## Expanding the ESLint configuration
+In this challenge, a task management application in the style of a **to-do list** was developed, with the following features:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Add a new task
+- Mark and unmark a task as completed
+- Remove a task from the list
+- Show the progress of task completion
 
-- Configure the top-level `parserOptions` property like this:
+## Concepts Covered
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+During the development of the application, the following concepts were covered:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- State
+- State immutability
+- Lists and keys in ReactJS
+- Props
+- Componentization
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Application Layout
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The application layout was provided by Rocketseat and can be accessed on Figma through the [project link](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate).
+
+## Tools Used
+
+To develop this project, the main tools covered in the first module of Ignite were used, including Vite and TypeScript.
+
+## Solution
+
+The solution for this challenge can be found in the official Rocketseat repository: [GitHub - rocketseat-education/ignite-challenge-solution-reactjs-todo](https://github.com/rocketseat-education/ignite-challenge-solution-reactjs-todo).
+
+## Conclusion
+
+This challenge was an excellent opportunity to reinforce the most important concepts of ReactJS and learn new concepts that will be used in future applications. The developed application is simple but has all the necessary features for efficient task management.

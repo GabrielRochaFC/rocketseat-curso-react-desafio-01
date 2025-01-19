@@ -57,7 +57,19 @@ export function App() {
           onChange={handleInputChange}
           onKeyPress={handleTexts}
         />
+        {/*
+            O componente Button recebe duas props:
+            - text: texto que aparece no botão
+            - onClick: função que é chamada toda vez que o botão é clicado. Neste caso, a função handleTexts é chamada 
+         */}
         <Button text="Criar" onClick={handleTexts} />
+
+        {/* 
+            O componente List recebe três props:
+            - tasks: array de tarefas
+            - onTaskCompletion: função que é chamada toda vez que uma tarefa é completada
+            - onDelete: função que é chamada toda vez que uma tarefa é deletada
+         */}
         <List
           tasks={tasks}
           onTaskCompletion={handleTaskCompletion}
