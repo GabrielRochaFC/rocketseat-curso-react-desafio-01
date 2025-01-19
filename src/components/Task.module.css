@@ -1,0 +1,36 @@
+.task {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+}
+
+.deleteButton {
+  color: var(--gray-300);
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.deleteButton:hover {
+  color: var(--danger);
+  background-color: var(--gray-400);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
